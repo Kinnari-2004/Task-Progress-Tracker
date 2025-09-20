@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-layout">
+    <section class="input-section">
+      <h2>Add New Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Task title" required autocomplete="off" />
+        <div id="subtask-group">
+          <div class="subtask-row">
+            <input type="text" class="subtask-input" placeholder="Subtask (optional)" />
+            <button type="button" class="remove-subtask" title="Remove subtask">&times;</button>
+          </div>
+        </div>
+        <button type="button" id="add-subtask">Add Subtask</button>
+        <button type="submit" id="add-task-btn">Add Task</button>
+      </form>
+    </section>
+    <section class="lists-section">
+      <div class="tasks-container">
+        <h2>Ongoing Tasks</h2>
+        <ul id="ongoing-tasks" class="tasks-list"></ul>
+      </div>
+      <div class="tasks-container">
+        <h2>Completed Tasks</h2>
+        <ul id="completed-tasks" class="tasks-list"></ul>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
